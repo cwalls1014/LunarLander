@@ -7,10 +7,10 @@ class PostHighScore:
 		self.enterName = enterName
 		self.getQuery = "SELECT MAX(score) FROM HighScores"
 		self.postQuery = "INSERT INTO HighScores (name, score, level) VALUES (%s, %s, %s)"
-		self.host = "sql865.main-hosting.eu"
-		self.user = "u127151104_admin"
-		self.password = "llAdmin1987"
-		self.database = "u127151104_LunarLander"
+		self.host = "localhost"
+		self.user = "user"
+		self.password = "password"
+		self.database = "database"
 		
 	def get_highscore(self):
 		self.lunarBase = mysql.connector.connect(
